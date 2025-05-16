@@ -1,5 +1,6 @@
 import re
 import logging
+import os
 from datetime import timedelta
 from telegram import Update, ChatPermissions
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
@@ -9,7 +10,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-TOKEN = "тут_токен_твоього_бота"
+TOKEN =os.getenv(8197294780:AAE59ZsyrPsY8h8nfnIDAoYKYtwRRkAICmo)
 
 async def ban_user(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message.reply_to_message:
